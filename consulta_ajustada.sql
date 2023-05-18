@@ -12,7 +12,7 @@ FROM
 	vwMovtoEntrada MV
 	LEFT JOIN vwAtak4Net_EntradasBase AS BASE ON (BASE.Chave_fato = MV.CHAVE_FATO)
 	LEFT JOIN tbProdutoRef AS REF ON (MV.COD_PRODUTO = REF.Cod_produto)
-	LEFT JOIN tbEntradasObs OBS ON OBS.Chave_fato = MV.CHAVE_FATO
+	LEFT JOIN tbEntradasObs AS OBS ON OBS.Chave_fato = MV.CHAVE_FATO
 
 WHERE 
 	MV.COD_DIVISAO1 = '004'
