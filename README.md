@@ -21,7 +21,16 @@
     <div>
       <h3>Soluções:</h3>
       <p>
-        Assim, apresentamos a solução a partir da consulta ()
+        Assim, apresentamos a solução a partir da <a href="https://github.com/Silas-ER/view_lobsters/blob/main/consulta_ajustada.sql">Consulta</a> onde primeiramente separamos a data e a hora que vem pro padrão do ERP em uma única variável, em seguida utilizei as especies de lagosta para fazer a soma do seu peso, independente se fossem pedaços ou o animal inteiro, e caso não fosse da especie especifica o valor retornaria o 0 e não adicionaria na soma, sempre definindo no final qual titulo aquele grupo de especies assumiria.
+      </p>
+      <p>
+        Por fim, foram adicionados os campos de n° da nota fiscal correspondente aquele valor em peso, uma observação de qual seria o produto no final (inteira ou cauda), e o barco que a trouxe (controle interno).
+      </p>
+      <p>
+        Nessa consulta foram utilizadas left joins afim de não ter duplicidade de dados com elementos de outras tabelas, e filtros para as entradas, diminuindo a quantidade de dados manipulados e eliminando especies indesejadas para a contagem.
+      </p>
+      <p>
+        Por fim o relatorio quando integrado ao excel assumiu o seguinte resultado: 
       </p>
     </div> 
   </main>
